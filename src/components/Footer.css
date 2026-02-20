@@ -1,0 +1,71 @@
+.footer {
+  background: #123d2a;
+  color: white;
+  padding: 50px 60px 30px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer-brand h2 {
+  color: #2ecc71;
+}
+
+.footer-brand p {
+  opacity: 0.8;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.footer-links h4 {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  display: block;
+  color: white;
+  opacity: 0.8;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  color: #2ecc71;
+}
+
+.footer-newsletter input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  margin: 10px 0;
+}
+
+.footer-newsletter button {
+  width: 100%;
+  padding: 10px;
+  background: #2ecc71;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.footer-newsletter button:hover {
+  background: #27ae60;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  opacity: 0.6;
+  font-size: 0.9rem;
+}

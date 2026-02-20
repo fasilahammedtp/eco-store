@@ -1,0 +1,83 @@
+.orders-page {
+  padding: 140px 60px 80px;
+  background: #f6fff9;
+}
+
+.order-card {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.order-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.total {
+  color: #1e5631;
+  font-size: 1.1rem;
+}
+
+.status {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.cancel-btn {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.cancel-btn:hover {
+  opacity: 0.9;
+}
+
+
+/* REAL ECOMMERCE COLORS */
+
+.status.paid {
+  background: #d4f8e8;
+  color: #1e8f5a;
+}
+
+.status.processing {
+  background: #fff3cd;
+  color: #b7791f;
+}
+
+.status.delivered {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.order-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 12px;
+}

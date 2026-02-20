@@ -1,0 +1,37 @@
+.about-page {
+  padding: 140px 60px 80px;
+  background: #f6fff9;
+  text-align: center;
+}
+
+.about-page h1 {
+  font-size: 3rem;
+  color: #1e5631;
+  margin-bottom: 20px;
+}
+
+.about-intro {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+.about-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.about-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  transition: 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+}

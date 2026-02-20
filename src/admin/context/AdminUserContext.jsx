@@ -1,0 +1,65 @@
+
+import { createContext, useContext, useEffect, useState } from "react";
+import axios from "axios";
+
+const AdminUserContext = createContext();
+
+const BASE_URL = "http://localhost:5000/users";
+
+export const AdminUserProvider = ({ children }) => {
+  const [users, setUsers] = useState([]);
+
+  //fetch users from db.json
+  const fetchUsers = async () => {
+  try {
+    const res = await axios.get(BASE_URL);
+
+    //exclude admin only
+    const normalUsers = res.data.filter(
+      user => user.role !== "admin"
+    );
+
+    setUsers(normalUsers);
+
+  } catch (err) {
+    console.error("Failed to fetch users", err);
+  }
+};
+
+
+  useEffect(() => {
+    fetchUsers();
+  }, []);
+
+  // block users
+  const blockUser = async (id) => {
+    try {
+      await axios.patch(`${BASE_URL}/${id}`, {
+        isBlocked: true,
+      });
+      fetchUsers(); 
+    } catch (err) {
+      console.error("Failed to block user", err);
+    }
+  };
+
+  // unblock user
+  const unblockUser = async (id) => {
+    try {
+      await axios.patch(`${BASE_URL}/${id}`, {
+        isBlocked: false,
+      });
+      fetchUsers();
+    } catch (err) {
+      console.error("Failed to unblock user", err);
+    }
+  };
+
+  return (
+    <AdminUserContext.Provider value={{ users, blockUser, unblockUser }}>
+      {children}
+    </AdminUserContext.Provider>
+  );
+};
+
+export const useAdminUsers = () => useContext(AdminUserContext);

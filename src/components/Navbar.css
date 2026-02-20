@@ -1,0 +1,453 @@
+/* LOGO IMAGE */
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 44px;         
+  width: auto;
+  object-fit: contain;
+}
+
+/* Smaller on mobile */
+@media (max-width: 768px) {
+  .logo-img {
+    height: 36px;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+  background: transparent;
+}
+
+.logo-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 34px;
+  }
+
+  .logo-text {
+    font-size: 1.3rem;
+  }
+}
+
+
+
+
+
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;   
+  background: #1e5631;
+}
+
+
+.navbar.solid {
+  background: rgba(20, 60, 40, 0.95);
+  backdrop-filter: none;
+}
+
+.navbar.solid a {
+  color: white;
+}
+
+/* Layout */
+
+.nav-container {
+  width: 100%;
+  padding: 14px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+}
+
+/* Links */
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+/* underline hover */
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #2ecc71;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Auth buttons */
+
+.auth-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.auth-buttons a {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.auth-buttons .signup {
+  background: #2ecc71;
+  border: none;
+}
+
+/* Hamburger */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.bar {
+  width: 26px;
+  height: 3px;
+  background: white;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+/* Animated X */
+
+.bar.open:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+
+
+/* LOGO IMAGE */
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 44px;          /* premium size */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Smaller on mobile */
+@media (max-width: 768px) {
+  .logo-img {
+    height: 36px;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+  background: transparent;
+}
+
+.logo-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 34px;
+  }
+
+  .logo-text {
+    font-size: 1.3rem;
+  }
+}
+
+
+
+
+
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;   /* keeps it above hero image */
+  background: #1e5631; /* solid so it doesn’t blend */
+}
+
+
+.navbar.solid {
+  background: rgba(20, 60, 40, 0.95);
+  backdrop-filter: none;
+}
+
+.navbar.solid a {
+  color: white;
+}
+
+/* Layout */
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+}
+
+/* Links */
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+/* underline hover */
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #2ecc71;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Auth buttons */
+
+.auth-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.auth-buttons a {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.auth-buttons .signup {
+  background: #2ecc71;
+  border: none;
+}
+
+/* Hamburger */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.bar {
+  width: 26px;
+  height: 3px;
+  background: white;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+/* Animated X */
+
+.bar.open:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 57px;
+    left: 0;
+    width: 100%;
+    background: rgba(11, 57, 34, 0.92);
+    backdrop-filter: blur(12px);
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 0;
+    gap: 20px;
+
+    transform: translateY(-120%);
+    transition: 0.4s ease;
+  }
+
+  .nav-links.show {
+    transform: translateY(0);
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+
+
+
+
+
+
+
+
+
+.icon-link {
+  position: relative;
+}
+
+.count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: #ff4d4d;
+  color: white;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+
+
+
+
+.auth-buttons button.signup {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-buttons button.signup:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(46, 204, 113, 0.4);
+}
+
+
+
+
+
+.icon-link {
+  position: relative;
+}
+
+.count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: #ff4d4d;
+  color: white;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+}

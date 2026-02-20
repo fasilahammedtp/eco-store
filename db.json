@@ -1,0 +1,1097 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "fasil",
+      "email": "fasil@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isBlocked": false
+    },
+    {
+      "id": 2,
+      "name": "zaim",
+      "email": "zaim@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isBlocked": false
+    },
+    {
+      "id": 3,
+      "name": "silu",
+      "email": "silu@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isBlocked": false
+    },
+    {
+      "id": 4,
+      "name": "fasi",
+      "email": "fasi@gmail.com",
+      "password": "123456",
+      "isBlocked": false
+    },
+    {
+      "id": 5,
+      "name": "kenza",
+      "email": "kenza@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isBlocked": false
+    },
+    {
+      "id": 6,
+      "name": "fasil ahammed",
+      "email": "fasilahammed@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isBlocked": false
+    },
+    {
+      "id": 7,
+      "name": "fff",
+      "email": "fff@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isBlocked": false
+    },
+    {
+      "id": 8,
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "password",
+      "role": "admin",
+      "isBlocked": false
+    },
+    {
+      "name": "sui",
+      "email": "sui@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isBlocked": false,
+      "id": 9
+    },
+    {
+      "name": "fasil",
+      "email": "fasiltp@gmail.com",
+      "password": "password",
+      "role": "user",
+      "isBlocked": false,
+      "id": 10
+    }
+  ],
+  "plants": [
+    {
+      "id": 1,
+      "name": "Monstera Deliciosa Plant",
+      "price": 999,
+      "image": "plant1.jpg",
+      "description": "The Monstera Delicios Often called the Swiss cheese plant, is a popular tropical houseplant known for its large ,glossy leaves with distinctive natural splits and holes, called fenestrations. ",
+      "stock": 11,
+      "category": "Plants"
+    },
+    {
+      "id": 2,
+      "name": "Snake Plant",
+      "price": 399,
+      "image": "plant2.jpg",
+      "description": "Known as an air purifying plant that can help improve indoor air quality",
+      "stock": 18
+    },
+    {
+      "id": 3,
+      "name": "Peace Lilly",
+      "price": 499,
+      "image": "plant3.jpg",
+      "description": "Known as an air purifying plant that can help improve indoor air quality",
+      "stock": 7,
+      "category": "Plants"
+    },
+    {
+      "id": 4,
+      "name": "Artificial Fiddle Fig Plant",
+      "price": 799,
+      "image": "plant4.jpg",
+      "description": "Features lifelike leaves with realistic tectures and a pot base. requires no water ,pruning,or sunlight",
+      "stock": 19
+    },
+    {
+      "id": 5,
+      "name": "Spider Plant",
+      "price": 699,
+      "image": "plant5.jpg",
+      "description": "Fast growing plant that removes pollutants and looks great in hanging pots.",
+      "stock": 20
+    },
+    {
+      "id": 6,
+      "name": "Aloe Vera",
+      "price": 259,
+      "image": "plant6.jpg",
+      "description": "Medicinal succulent known for healing skin and improving air quality.",
+      "stock": 20
+    },
+    {
+      "id": 7,
+      "name": "Jade Plant",
+      "price": 499,
+      "image": "plant7.jpg",
+      "description": "Lucky plant believed to bring prosperity and positive energy.",
+      "stock": 20
+    },
+    {
+      "id": 8,
+      "name": "ZZ Plant",
+      "price": 869,
+      "image": "plant8.jpg",
+      "description": "Hardy indoor plant that survives low light and minimal watering.",
+      "stock": 20
+    },
+    {
+      "id": 9,
+      "name": "Areca Palm",
+      "price": 1200,
+      "image": "plant9.jpg",
+      "description": "Natural humidifier that improves indoor air quality.",
+      "stock": 30
+    },
+    {
+      "id": 10,
+      "name": "English Ivy",
+      "price": 1299,
+      "image": "plant10.jpg",
+      "description": " Climbing plant that reduces mold and allergens.",
+      "stock": 30
+    },
+    {
+      "id": 11,
+      "name": "Calathea (Prayer Plant)",
+      "price": 1199,
+      "image": "plant11.jpg",
+      "description": "Decorative prayer plant with beautiful patterned leaves.",
+      "stock": 30
+    },
+    {
+      "id": 12,
+      "name": "Rubber Plant",
+      "price": 459,
+      "image": "plant12.jpg",
+      "description": "Strong air purifying plant with thick glossy foliage.",
+      "stock": 30
+    },
+    {
+      "id": 13,
+      "name": "Pothos (Money Plant)",
+      "price": 650,
+      "image": "plant13.jpg",
+      "description": "Hardy trailing plant great for shelves and hanging pots.",
+      "stock": 30
+    },
+    {
+      "id": 14,
+      "name": "Philodendron",
+      "price": 799,
+      "image": "plant14.jpg",
+      "description": "Tropical leafy plant for indoor décor.",
+      "stock": 30
+    },
+    {
+      "id": 15,
+      "name": "Boston Fern",
+      "price": 999,
+      "image": "plant15.jpg",
+      "description": "Classic lush plant that loves humidity.",
+      "stock": 30
+    },
+    {
+      "id": 16,
+      "name": "Chinese Evergreen (Aglaonema)",
+      "price": 1249,
+      "image": "plant16.jpg",
+      "description": "Colorful foliage plant perfect for low light areas.",
+      "stock": 29
+    },
+    {
+      "id": 17,
+      "name": "Bird of Paradise Plant",
+      "price": 1159,
+      "image": "plant17.jpg",
+      "description": "Bold tropical plant with large dramatic leaves.",
+      "stock": 30
+    },
+    {
+      "id": 18,
+      "name": "String of Pearls (Succulent)",
+      "price": 1200,
+      "image": "plant18.jpg",
+      "description": "Unique hanging succulent with bead-like leaves.",
+      "stock": 30
+    },
+    {
+      "id": 1771054626570,
+      "name": "ButterFly Plant",
+      "category": "Plants",
+      "price": 99,
+      "stock": 25,
+      "image": "data:image/jpeg;base64,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"
+    }
+  ],
+  "ecoProducts": [
+    {
+      "id": 19,
+      "name": "Bamboo Toothbrush",
+      "price": 29,
+      "image": "eco-pro1.jpg",
+      "description": "Biodegradable toothbrush made from natural bamboo for eco living.",
+      "stock": 30
+    },
+    {
+      "id": 20,
+      "name": "Bamboo Stainless Steel Water Bottle",
+      "price": 150,
+      "image": "eco-pro2.jpg",
+      "description": "Reusable insulated bottle that keeps drinks cold and reduces plastic waste.",
+      "stock": 22
+    },
+    {
+      "id": 21,
+      "name": "Cloth Grocery Bags",
+      "price": 49,
+      "image": "eco-pro3.jpg",
+      "description": "Strong reusable bags for shopping without plastic pollution.",
+      "stock": 28
+    },
+    {
+      "id": 22,
+      "name": "Beeswax Food Wrap",
+      "price": 150,
+      "image": "eco-pro4.jpg",
+      "description": "Natural food wrap alternative to plastic for fresh storage.",
+      "stock": 30
+    },
+    {
+      "id": 23,
+      "name": "Coconut Dish Scrubber",
+      "price": 39,
+      "image": "eco-pro5.jpg",
+      "description": "Eco friendly scrubber made from coconut fibers.",
+      "stock": 30
+    },
+    {
+      "id": 24,
+      "name": "Reusable Coffee Cup",
+      "price": 20,
+      "image": "eco-pro6.jpg",
+      "description": "Travel friendly cup to avoid disposable cups.",
+      "stock": 30
+    },
+    {
+      "id": 25,
+      "name": "Compostable Trash Bags",
+      "price": 50,
+      "image": "eco-pro7.jpg",
+      "description": "Environment friendly waste bags.",
+      "stock": 30
+    },
+    {
+      "id": 26,
+      "name": "Biodegradable Cleaning Spray",
+      "price": 80,
+      "image": "eco-pro8.jpg",
+      "description": "Non toxic plant based cleaner.",
+      "stock": 29
+    },
+    {
+      "id": 27,
+      "name": "Wooden Hair Comb",
+      "price": 50,
+      "image": "eco-pro9.jpg",
+      "description": "Plastic free grooming accessory.",
+      "stock": 30
+    },
+    {
+      "id": 28,
+      "name": "Natural Loofah Bath Sponge",
+      "price": 30,
+      "image": "eco-pro10.jpg",
+      "description": "Organic exfoliating sponge.",
+      "stock": 30
+    },
+    {
+      "id": 29,
+      "name": "Refillable Glass Soap Dispenser",
+      "price": 99,
+      "image": "eco-pro11.jpg",
+      "description": "Reduce plastic soap bottles.",
+      "stock": 29
+    },
+    {
+      "id": 30,
+      "name": "Solar Garden Lights",
+      "price": 1150,
+      "image": "eco-pro12.jpg",
+      "description": "Eco powered outdoor lighting.",
+      "stock": 30
+    },
+    {
+      "id": 31,
+      "name": "Ecofynd Coir Pot",
+      "price": 199,
+      "image": "eco-pro13.jpg",
+      "description": "Crafted from innovative biocomposites of rice husk and bamboo fibers, these pots are described as durable and lightweight by reviewers on Amazon.in. They are UV-stabilized and suitable for indoor and outdoor settings..",
+      "stock": 30
+    },
+    {
+      "id": 32,
+      "name": "Bamboo Cutlery Set",
+      "price": 99,
+      "image": "eco-pro14.jpg",
+      "description": "Portable eco friendly eating set.",
+      "stock": 25
+    },
+    {
+      "id": 33,
+      "name": "Organic Cotton Towels",
+      "price": 150,
+      "image": "eco-pro15.jpg",
+      "description": "Soft chemical free towels.",
+      "stock": 29
+    },
+    {
+      "id": 34,
+      "name": "Recycled Paper Notebooks",
+      "price": 53,
+      "image": "eco-pro16.jpg",
+      "description": "Made from reused paper.",
+      "stock": 29
+    },
+    {
+      "id": 35,
+      "name": "Natural Soy Wax Candles",
+      "price": 40,
+      "image": "eco-pro17.jpg",
+      "description": "Clean burning eco candles.",
+      "stock": 26
+    },
+    {
+      "id": 36,
+      "name": "Biodegradable Phone Case",
+      "price": 149,
+      "image": "eco-pro18.jpg",
+      "description": "Earth friendly mobile protection.",
+      "stock": 29
+    }
+  ],
+  "terrariums": [
+    {
+      "id": 37,
+      "name": "Moss Garden Terrarium",
+      "price": 4999,
+      "image": "terr1.jpg",
+      "description": "Mini moss ecosystem in a glass jar requiring very low maintenance.",
+      "category": "Terrariums",
+      "collection": "terrariums",
+      "stock": 19
+    },
+    {
+      "id": 38,
+      "name": "Mini Jungle Terrarium",
+      "price": 1500,
+      "image": "terr2.jpg",
+      "description": "Tiny rainforest style terrarium with lush greenery.",
+      "stock": 7
+    },
+    {
+      "id": 39,
+      "name": "Desert Cactus Terrarium",
+      "price": 1699,
+      "image": "terr3.jpg",
+      "description": "Dry climate terrarium featuring beautiful cactus plants.",
+      "stock": 18
+    },
+    {
+      "id": 40,
+      "name": "Glass Globe Terrarium",
+      "price": 2900,
+      "image": "terr4.jpg",
+      "description": "Modern glass globe showcasing layered natural beauty.",
+      "stock": 21
+    },
+    {
+      "id": 41,
+      "name": "Fairy Forest Terrarium",
+      "price": 3700,
+      "image": "terr5.jpg",
+      "description": "Magical miniature forest scene.",
+      "stock": 20
+    },
+    {
+      "id": 42,
+      "name": "Emerald Forest Terrarium",
+      "price": 9500,
+      "image": "terr6.jpg",
+      "description": "Dense green forest ecosystem.",
+      "stock": 19
+    },
+    {
+      "id": 43,
+      "name": "Tropical Fern Terrarium",
+      "price": 2100,
+      "image": "terr7.jpg",
+      "description": "Humid jungle inspired terrarium.",
+      "stock": 20
+    },
+    {
+      "id": 44,
+      "name": "Crystal Jar Terrarium",
+      "price": 2800,
+      "image": "terr8.jpg",
+      "description": "Stylish glass plant display.",
+      "stock": 20
+    },
+    {
+      "id": 45,
+      "name": "Hanging Air Plant Terrarium",
+      "price": 2000,
+      "image": "terr9.jpg",
+      "description": " Floating plant decor.",
+      "stock": 20
+    },
+    {
+      "id": 46,
+      "name": "Zen Sand Terrarium",
+      "price": 1900,
+      "image": "terr10.jpg",
+      "description": "Calm Japanese garden style design.",
+      "stock": 18
+    },
+    {
+      "id": 47,
+      "name": "Woodland Dome Terrarium",
+      "price": 3200,
+      "image": "terr11.jpg",
+      "description": "Forest plants under glass dome.",
+      "stock": 19
+    },
+    {
+      "id": 48,
+      "name": "Waterfall Moss Terrarium",
+      "price": 4200,
+      "image": "terr12.jpg",
+      "description": "Moss landscape with waterfall look.",
+      "stock": 19
+    },
+    {
+      "id": 49,
+      "name": "World oldest Terrarium",
+      "price": 200000,
+      "image": "terr13.jpg",
+      "description": "Rare long living ecosystem display.",
+      "category": "Terrariums",
+      "stock": 4
+    },
+    {
+      "id": 50,
+      "name": "Pyramid Glass Terrarium",
+      "price": 2200,
+      "image": "terr14.jpg",
+      "description": "Geometric modern terrarium.",
+      "stock": 20
+    },
+    {
+      "id": 51,
+      "name": "Bonsai Style Terrarium",
+      "price": 1700,
+      "image": "terr15.jpg",
+      "description": "Mini tree ecosystem art.",
+      "stock": 20
+    },
+    {
+      "id": 52,
+      "name": "Moon Garden Terrarium",
+      "price": 5500,
+      "image": "terr16.jpg",
+      "description": "Night themed glowing plant setup.",
+      "stock": 20
+    },
+    {
+      "id": 53,
+      "name": "Rainforest Cube Terrarium",
+      "price": 3600,
+      "image": "terr17.jpg",
+      "description": "Box style tropical habitat.",
+      "stock": 20
+    },
+    {
+      "id": 54,
+      "name": "Eco Sphere Terrarium",
+      "price": 2860,
+      "image": "terr18.jpg",
+      "description": "Closed ecosystem that sustains itself.",
+      "stock": 20
+    }
+  ],
+  "cart": [
+    {
+      "userId": 9,
+      "productId": 49,
+      "name": "World oldest Terrarium",
+      "price": 200000,
+      "image": "terr13.jpg",
+      "quantity": 1,
+      "id": 6
+    },
+    {
+      "userId": 10,
+      "productId": 39,
+      "name": "Desert Cactus Terrarium",
+      "price": 1699,
+      "image": "terr3.jpg",
+      "quantity": 1,
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "productId": 37,
+      "name": "Moss Garden Terrarium",
+      "price": 4999,
+      "image": "terr1.jpg",
+      "quantity": 1,
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "productId": 21,
+      "name": "Cloth Grocery Bags",
+      "price": 49,
+      "image": "eco-pro3.jpg",
+      "quantity": 1,
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "productId": 1,
+      "name": "Monstera Deliciosa Plant",
+      "price": 999,
+      "image": "plant1.jpg",
+      "quantity": 1,
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "productId": 38,
+      "name": "Mini Jungle Terrarium",
+      "price": 1500,
+      "image": "terr2.jpg",
+      "quantity": 1,
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "productId": 20,
+      "name": "Bamboo Stainless Steel Water Bottle",
+      "price": 150,
+      "image": "eco-pro2.jpg",
+      "quantity": 1,
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "productId": 31,
+      "name": "Fork",
+      "price": 9,
+      "image": "eco-pro13.jpg",
+      "quantity": 1,
+      "id": 13
+    }
+  ],
+  "wishlist": [
+    {
+      "userId": 4,
+      "productId": 3,
+      "name": "Peace Lilly",
+      "price": 499,
+      "image": "plant3.jpg",
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "productId": 40,
+      "name": "Glass Globe Terrarium",
+      "price": 2900,
+      "image": "terr4.jpg",
+      "id": 6
+    },
+    {
+      "userId": 4,
+      "productId": 21,
+      "name": "Cloth Grocery Bags",
+      "price": 49,
+      "image": "eco-pro3.jpg",
+      "id": 7
+    },
+    {
+      "userId": 4,
+      "productId": 38,
+      "name": "Mini Jungle Terrarium",
+      "price": 1500,
+      "image": "terr2.jpg",
+      "id": 9
+    },
+    {
+      "userId": 10,
+      "productId": 39,
+      "name": "Desert Cactus Terrarium",
+      "price": 1699,
+      "image": "terr3.jpg",
+      "id": 10
+    }
+  ],
+  "orders": [
+    {
+      "userId": 3,
+      "customerName": "silu",
+      "customerEmail": "silu@gmail.com",
+      "items": [
+        {
+          "id": 19,
+          "name": "Bamboo Toothbrush",
+          "price": 29,
+          "image": "eco-pro1.jpg",
+          "description": "Biodegradable toothbrush made from natural bamboo for eco living.",
+          "quantity": 1
+        }
+      ],
+      "total": 29,
+      "paymentMethod": "upi",
+      "date": "2/13/2026, 12:18:11 PM",
+      "status": "Paid",
+      "id": 1
+    },
+    {
+      "userId": 4,
+      "customerName": "fasi",
+      "customerEmail": "fasi@gmail.com",
+      "items": [
+        {
+          "id": 16,
+          "name": "Chinese Evergreen (Aglaonema)",
+          "price": 1249,
+          "image": "plant16.jpg",
+          "description": "Colorful foliage plant perfect for low light areas.",
+          "stock": 30,
+          "quantity": 1
+        }
+      ],
+      "total": 1249,
+      "paymentMethod": "upi",
+      "date": "2/14/2026, 4:47:37 PM",
+      "status": "Delivered",
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "customerName": "zaim",
+      "customerEmail": "zaim@gmail.com",
+      "items": [
+        {
+          "userId": 2,
+          "productId": 49,
+          "name": "World oldest Terrarium",
+          "price": 200000,
+          "image": "terr13.jpg",
+          "quantity": 1,
+          "id": 8
+        },
+        {
+          "userId": 2,
+          "productId": 48,
+          "name": "Waterfall Moss Terrarium",
+          "price": 4200,
+          "image": "terr12.jpg",
+          "quantity": 1,
+          "id": 9
+        },
+        {
+          "userId": 2,
+          "productId": 47,
+          "name": "Woodland Dome Terrarium",
+          "price": 3200,
+          "image": "terr11.jpg",
+          "quantity": 1,
+          "id": 10
+        },
+        {
+          "userId": 2,
+          "productId": 46,
+          "name": "Zen Sand Terrarium",
+          "price": 1900,
+          "image": "terr10.jpg",
+          "quantity": 1,
+          "id": 11
+        }
+      ],
+      "total": 209300,
+      "paymentMethod": "upi",
+      "date": "2/14/2026, 4:48:51 PM",
+      "status": "Paid",
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "customerName": "zaim",
+      "customerEmail": "zaim@gmail.com",
+      "items": [
+        {
+          "userId": 2,
+          "productId": 19,
+          "name": "Bamboo Toothbrush",
+          "price": 29,
+          "image": "eco-pro1.jpg",
+          "quantity": 1,
+          "id": 8
+        },
+        {
+          "userId": 2,
+          "productId": 20,
+          "name": "Bamboo Stainless Steel Water Bottle",
+          "price": 150,
+          "image": "eco-pro2.jpg",
+          "quantity": 1,
+          "id": 9
+        },
+        {
+          "userId": 2,
+          "productId": 21,
+          "name": "Cloth Grocery Bags",
+          "price": 49,
+          "image": "eco-pro3.jpg",
+          "quantity": 1,
+          "id": 10
+        }
+      ],
+      "total": 228,
+      "paymentMethod": "upi",
+      "date": "2/14/2026, 4:49:55 PM",
+      "status": "In Transit",
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "customerName": "zaim",
+      "customerEmail": "zaim@gmail.com",
+      "items": [
+        {
+          "userId": 2,
+          "productId": 19,
+          "name": "Bamboo Toothbrush",
+          "price": 29,
+          "image": "eco-pro1.jpg",
+          "quantity": 1,
+          "id": 8
+        }
+      ],
+      "total": 29,
+      "paymentMethod": "upi",
+      "date": "2/14/2026, 4:50:23 PM",
+      "status": "Paid",
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "customerName": "zaim",
+      "customerEmail": "zaim@gmail.com",
+      "items": [
+        {
+          "userId": 2,
+          "productId": 40,
+          "name": "Glass Globe Terrarium",
+          "price": 2900,
+          "image": "terr4.jpg",
+          "quantity": 1,
+          "id": 8
+        }
+      ],
+      "total": 2900,
+      "paymentMethod": "upi",
+      "date": "2/14/2026, 4:59:56 PM",
+      "status": "Cancelled",
+      "id": 6
+    },
+    {
+      "userId": 9,
+      "customerName": "sui",
+      "customerEmail": "sui@gmail.com",
+      "items": [
+        {
+          "userId": 9,
+          "productId": 20,
+          "name": "Bamboo Stainless Steel Water Bottle",
+          "price": 150,
+          "image": "eco-pro2.jpg",
+          "quantity": 6,
+          "id": 7
+        },
+        {
+          "userId": 9,
+          "productId": 34,
+          "name": "Recycled Paper Notebooks",
+          "price": 53,
+          "image": "eco-pro16.jpg",
+          "quantity": 1,
+          "id": 8
+        },
+        {
+          "userId": 9,
+          "productId": 35,
+          "name": "Natural Soy Wax Candles",
+          "price": 40,
+          "image": "eco-pro17.jpg",
+          "quantity": 4,
+          "id": 9
+        },
+        {
+          "userId": 9,
+          "productId": 36,
+          "name": "Biodegradable Phone Case",
+          "price": 149,
+          "image": "eco-pro18.jpg",
+          "quantity": 1,
+          "id": 10
+        },
+        {
+          "userId": 9,
+          "productId": 33,
+          "name": "Organic Cotton Towels",
+          "price": 150,
+          "image": "eco-pro15.jpg",
+          "quantity": 1,
+          "id": 11
+        },
+        {
+          "userId": 9,
+          "productId": 32,
+          "name": "Bamboo Cutlery Set",
+          "price": 99,
+          "image": "eco-pro14.jpg",
+          "quantity": 5,
+          "id": 12
+        },
+        {
+          "userId": 9,
+          "productId": 26,
+          "name": "Biodegradable Cleaning Spray",
+          "price": 80,
+          "image": "eco-pro8.jpg",
+          "quantity": 1,
+          "id": 13
+        }
+      ],
+      "total": 1987,
+      "paymentMethod": "upi",
+      "date": "2/15/2026, 10:14:26 PM",
+      "status": "Paid",
+      "id": 7
+    },
+    {
+      "userId": 9,
+      "customerName": "sui",
+      "customerEmail": "sui@gmail.com",
+      "items": [
+        {
+          "userId": 9,
+          "productId": 49,
+          "name": "World oldest Terrarium",
+          "price": 200000,
+          "image": "terr13.jpg",
+          "quantity": 1,
+          "id": 6
+        }
+      ],
+      "total": 200000,
+      "paymentMethod": "upi",
+      "date": "2/15/2026, 11:02:04 PM",
+      "status": "Paid",
+      "id": 8
+    },
+    {
+      "userId": 9,
+      "customerName": "sui",
+      "customerEmail": "sui@gmail.com",
+      "items": [
+        {
+          "id": 49,
+          "name": "World oldest Terrarium",
+          "price": 200000,
+          "image": "terr13.jpg",
+          "description": "Rare long living ecosystem display.",
+          "category": "Terrariums",
+          "stock": 11,
+          "quantity": 1
+        }
+      ],
+      "total": 200000,
+      "paymentMethod": "upi",
+      "date": "2/16/2026, 9:45:12 AM",
+      "status": "Paid",
+      "id": 9
+    },
+    {
+      "userId": 4,
+      "customerName": "fasi",
+      "customerEmail": "fasi@gmail.com",
+      "items": [
+        {
+          "id": 49,
+          "name": "World oldest Terrarium",
+          "price": 200000,
+          "image": "terr13.jpg",
+          "description": "Rare long living ecosystem display.",
+          "category": "Terrariums",
+          "stock": 10,
+          "quantity": 1
+        }
+      ],
+      "total": 200000,
+      "paymentMethod": "upi",
+      "date": "2/17/2026, 8:44:42 AM",
+      "status": "Paid",
+      "id": 10
+    },
+    {
+      "userId": 4,
+      "customerName": "fasi",
+      "customerEmail": "fasi@gmail.com",
+      "items": [
+        {
+          "userId": 4,
+          "productId": 49,
+          "name": "World oldest Terrarium",
+          "price": 200000,
+          "image": "terr13.jpg",
+          "quantity": 1,
+          "id": 7
+        }
+      ],
+      "total": 200000,
+      "paymentMethod": "upi",
+      "date": "2/17/2026, 12:37:47 PM",
+      "status": "Paid",
+      "id": 11
+    },
+    {
+      "userId": 8,
+      "customerName": "Admin",
+      "customerEmail": "admin@gmail.com",
+      "items": [
+        {
+          "id": 37,
+          "name": "Moss Garden Terrarium",
+          "price": 4999,
+          "image": "terr1.jpg",
+          "description": "Mini moss ecosystem in a glass jar requiring very low maintenance.",
+          "category": "Terrariums",
+          "collection": "terrariums",
+          "stock": 19,
+          "quantity": 1
+        }
+      ],
+      "total": 4999,
+      "paymentMethod": "upi",
+      "date": "2/20/2026, 12:12:05 PM",
+      "status": "Cancelled",
+      "id": 12
+    },
+    {
+      "userId": 4,
+      "customerName": "fasi",
+      "customerEmail": "fasi@gmail.com",
+      "items": [
+        {
+          "id": 29,
+          "name": "Refillable Glass Soap Dispenser",
+          "price": 99,
+          "image": "eco-pro11.jpg",
+          "description": "Reduce plastic soap bottles.",
+          "stock": 30,
+          "quantity": 1
+        }
+      ],
+      "total": 99,
+      "paymentMethod": "upi",
+      "date": "2/20/2026, 12:31:27 PM",
+      "status": "Paid",
+      "id": 13
+    },
+    {
+      "userId": 4,
+      "customerName": "fasi",
+      "customerEmail": "fasi@gmail.com",
+      "items": [
+        {
+          "userId": 4,
+          "productId": 21,
+          "name": "Cloth Grocery Bags",
+          "price": 49,
+          "image": "eco-pro3.jpg",
+          "quantity": 1,
+          "id": 7
+        },
+        {
+          "userId": 4,
+          "productId": 1,
+          "name": "Monstera Deliciosa Plant",
+          "price": 999,
+          "image": "plant1.jpg",
+          "quantity": 1,
+          "id": 9
+        },
+        {
+          "userId": 4,
+          "productId": 38,
+          "name": "Mini Jungle Terrarium",
+          "price": 1500,
+          "image": "terr2.jpg",
+          "quantity": 1,
+          "id": 10
+        },
+        {
+          "userId": 4,
+          "productId": 46,
+          "name": "Zen Sand Terrarium",
+          "price": 1900,
+          "image": "terr10.jpg",
+          "quantity": 1,
+          "id": 11
+        }
+      ],
+      "total": 4448,
+      "paymentMethod": "upi",
+      "date": "2/20/2026, 12:35:55 PM",
+      "status": "Paid",
+      "id": 14
+    },
+    {
+      "userId": 10,
+      "customerName": "fasil",
+      "customerEmail": "fasiltp@gmail.com",
+      "items": [
+        {
+          "id": 49,
+          "name": "World oldest Terrarium",
+          "price": 200000,
+          "image": "terr13.jpg",
+          "description": "Rare long living ecosystem display.",
+          "category": "Terrariums",
+          "stock": 8,
+          "quantity": 1
+        }
+      ],
+      "total": 200000,
+      "paymentMethod": "upi",
+      "date": "2/20/2026, 1:42:53 PM",
+      "status": "Paid",
+      "id": 15
+    }
+  ]
+}

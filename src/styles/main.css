@@ -1,0 +1,156 @@
+body {
+  margin:0;
+  
+  font-family: 'Poppins', sans-serif;
+
+}
+.page-content {
+  margin-top: 60px;
+}
+
+
+.page-content {
+  flex: 1;
+    overflow: visible;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+}
+
+
+
+/* ================= MOBILE RESPONSIVE FIXES ================= */
+
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 12px 16px;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .auth-buttons a {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  
+
+  .tagline {
+    font-size: 1.1rem;
+  }
+
+  .quotes span {
+    font-size: 0.95rem;
+  }
+
+  .hero-buttons a {
+    display: inline-block;
+    margin: 8px 6px;
+  }
+
+  .featured {
+    padding: 120px 20px 60px;
+  }
+
+  .slider {
+    gap: 14px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+  }
+
+  .product-card {
+    padding: 12px;
+  }
+
+  .product-card img {
+    height: 140px;
+  }
+
+  .why-eco {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .categories {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .cat-card {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 60px 20px 20px;
+  }
+
+  .footer-container {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .auth-card {
+    width: 90%;
+    padding: 28px;
+  }
+
+  .checkout-page {
+    width: 90%;
+    padding: 28px;
+    margin: 110px auto;
+  }
+
+  .checkout-total {
+    font-size: 1.3rem;
+  }
+
+  .card-form .row {
+    flex-direction: column;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-buttons a {
+    width: 85%;
+    margin: auto;
+  }
+}
+ 
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    line-height: 1.1;
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+.wishlist-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.add-cart-btn {
+  background: #2ecc71;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background: #e74c3c !important;
+  color: white !important;
+  border: none !important;
+
+  width: 46px;
+  height: 34px;
+  border-radius: 60%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: #c0392b !important;
+  cursor: pointer;
+}
+
+
+
+

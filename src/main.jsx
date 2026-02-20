@@ -1,0 +1,31 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import { CartProvider } from "./context/CartContext";
+import { AuthProvider } from "./context/AuthContext";
+import { WishlistProvider } from "./context/WishlistContext";
+import { ToastProvider } from "./context/ToastContext";
+import "./styles/main.css"
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+     <AuthProvider>
+       <CartProvider>
+         <WishlistProvider>
+           <ToastProvider>
+             <App />
+           </ToastProvider>
+         </WishlistProvider>
+       </CartProvider>
+     </AuthProvider>
+  </BrowserRouter>
+);
+
+
+
+
+
+
+
+
