@@ -56,7 +56,6 @@ const EditProduct = () => {
 
   return (
     <div className="admin-page">
-       {/* breadcrumb */}
              <div className="breadcrumb">
                <Link to="/admin/products">Products</Link>
                <span> / </span>
@@ -104,7 +103,6 @@ const EditProduct = () => {
               />
             </div>
 
-            {/* stock field */}
             <div className="form-group">
               <label>Stock Quantity</label>
               <input

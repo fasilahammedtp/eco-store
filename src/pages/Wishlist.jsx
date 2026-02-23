@@ -1,19 +1,31 @@
 import { useWishlist } from "../context/WishlistContext";
 import { addToCart } from "../services/api";
 import { useAuth } from "../context/AuthContext";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 import "../styles/wishlist.css";
+import { useToast } from "../context/ToastContext";
 
 function Wishlist() {
   const { wishlist, toggleWishlist } = useWishlist();
   const { user } = useAuth();
+  const { loadCartCount } = useContext(CartContext);
+  const { showToast } = useToast();
 
   if (!wishlist || wishlist.length === 0) {
     return <h2 style={{ padding: "120px" }}>Wishlist is empty</h2>;
   }
 
   const handleAddToCart = async (item) => {
-    await addToCart(item, user.id);
-    await toggleWishlist(item); //  remove using context
+    const res = await addToCart(item, user.id);
+
+    if(res===undefined){
+      showToast("Already in cart", "info");
+      return;
+    }
+
+    await loadCartCount();
+    await toggleWishlist(item); 
   };
 
   return (
@@ -39,7 +51,7 @@ function Wishlist() {
 
               <button
                 className="remove-btn"
-                onClick={() => toggleWishlist(item)}  // 🔥 use context
+                onClick={() => toggleWishlist(item)} 
               >
                 ✖
               </button>

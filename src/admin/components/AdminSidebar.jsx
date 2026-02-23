@@ -4,7 +4,6 @@ const AdminSidebar = ({ sidebarOpen, setSidebarOpen }) => {
   return (
     <div className={`admin-sidebar ${sidebarOpen ? "open" : ""}`}>
       
-      {/* close button for mobile */}
       <button 
         className="close-btn"
         onClick={() => setSidebarOpen(false)}>✕</button>

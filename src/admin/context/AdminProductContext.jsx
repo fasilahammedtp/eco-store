@@ -13,7 +13,6 @@ export const AdminProductProvider = ({ children }) => {
       const eco = await axios.get(`${BASE_URL}/ecoProducts`);
       const terr = await axios.get(`${BASE_URL}/terrariums`);
 
-      // Attach category manually
       const allProducts = [
         ...plants.data.map(p => ({ ...p, category: "Plants" })),
         ...eco.data.map(p => ({ ...p, category: "Eco Products" })),

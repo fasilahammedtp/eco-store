@@ -35,7 +35,7 @@ const Orders2 = () => {
       console.error("Failed to fetch data:", err);
     } finally {
       setTimeout(() => {
-        setLoading(false); // smooth shimmer
+        setLoading(false); 
       }, 100);
     }
   };
@@ -44,7 +44,6 @@ const Orders2 = () => {
   for (let item of items) {
     const productId = item.productId || item.id;
 
-    // plants
     try {
       const res = await axios.get(`http://localhost:5000/plants/${productId}`);
       if (res.data) {
@@ -55,7 +54,6 @@ const Orders2 = () => {
       }
     } catch {}
 
-    // ecoproducts
     try {
       const res = await axios.get(`http://localhost:5000/ecoProducts/${productId}`);
       if (res.data) {
@@ -66,7 +64,6 @@ const Orders2 = () => {
       }
     } catch {}
 
-    // terrariums
     try {
       const res = await axios.get(`http://localhost:5000/terrariums/${productId}`);
       if (res.data) {
@@ -186,7 +183,6 @@ const Orders2 = () => {
           </button>
         ))}
       </div>
-        {/* date filter */}
       <div className="date-filters">
         <div>
           <label>From:</label>

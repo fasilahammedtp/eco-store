@@ -34,7 +34,7 @@ const AddProduct = () => {
       category: form.category,
       price: Number(form.price),
       stock: Number(form.stock),
-      image: form.image || "/placeholder.jpg", //default image if empty
+      image: form.image || "/placeholder.jpg", 
     });
 
     toast.success("Product added successfully");
@@ -112,7 +112,6 @@ const AddProduct = () => {
               />
             </div>
 
-            {/* image url */}
             <div className="form-group">
               <label>Image URL (Optional)</label>
               <input

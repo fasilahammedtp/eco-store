@@ -4,12 +4,11 @@ import { useAuth } from "../../context/AuthContext";
 const AdminProtectedRoute = ({ children }) => {
   const { user } = useAuth();
 
-  // not logged in
   if (!user) {
     return <Navigate to="/login" replace />;
   }
 
-  // logged in but not admin
+
   if (user.role !== "admin") {
     return <Navigate to="/" replace />;
   }

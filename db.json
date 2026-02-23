@@ -78,6 +78,14 @@
       "role": "user",
       "isBlocked": false,
       "id": 10
+    },
+    {
+      "name": "fasil tp",
+      "email": "fasiltp2006@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isBlocked": false,
+      "id": 11
     }
   ],
   "plants": [
@@ -339,7 +347,7 @@
       "price": 199,
       "image": "eco-pro13.jpg",
       "description": "Crafted from innovative biocomposites of rice husk and bamboo fibers, these pots are described as durable and lightweight by reviewers on Amazon.in. They are UV-stabilized and suitable for indoor and outdoor settings..",
-      "stock": 30
+      "stock": 22
     },
     {
       "id": 32,
@@ -399,7 +407,7 @@
       "price": 1500,
       "image": "terr2.jpg",
       "description": "Tiny rainforest style terrarium with lush greenery.",
-      "stock": 7
+      "stock": 4
     },
     {
       "id": 39,
@@ -549,71 +557,9 @@
       "image": "terr3.jpg",
       "quantity": 1,
       "id": 7
-    },
-    {
-      "userId": 1,
-      "productId": 37,
-      "name": "Moss Garden Terrarium",
-      "price": 4999,
-      "image": "terr1.jpg",
-      "quantity": 1,
-      "id": 8
-    },
-    {
-      "userId": 1,
-      "productId": 21,
-      "name": "Cloth Grocery Bags",
-      "price": 49,
-      "image": "eco-pro3.jpg",
-      "quantity": 1,
-      "id": 9
-    },
-    {
-      "userId": 1,
-      "productId": 1,
-      "name": "Monstera Deliciosa Plant",
-      "price": 999,
-      "image": "plant1.jpg",
-      "quantity": 1,
-      "id": 10
-    },
-    {
-      "userId": 1,
-      "productId": 38,
-      "name": "Mini Jungle Terrarium",
-      "price": 1500,
-      "image": "terr2.jpg",
-      "quantity": 1,
-      "id": 11
-    },
-    {
-      "userId": 1,
-      "productId": 20,
-      "name": "Bamboo Stainless Steel Water Bottle",
-      "price": 150,
-      "image": "eco-pro2.jpg",
-      "quantity": 1,
-      "id": 12
-    },
-    {
-      "userId": 1,
-      "productId": 31,
-      "name": "Fork",
-      "price": 9,
-      "image": "eco-pro13.jpg",
-      "quantity": 1,
-      "id": 13
     }
   ],
   "wishlist": [
-    {
-      "userId": 4,
-      "productId": 3,
-      "name": "Peace Lilly",
-      "price": 499,
-      "image": "plant3.jpg",
-      "id": 5
-    },
     {
       "userId": 2,
       "productId": 40,
@@ -623,12 +569,12 @@
       "id": 6
     },
     {
-      "userId": 4,
-      "productId": 21,
-      "name": "Cloth Grocery Bags",
-      "price": 49,
-      "image": "eco-pro3.jpg",
-      "id": 7
+      "userId": 10,
+      "productId": 39,
+      "name": "Desert Cactus Terrarium",
+      "price": 1699,
+      "image": "terr3.jpg",
+      "id": 10
     },
     {
       "userId": 4,
@@ -636,15 +582,7 @@
       "name": "Mini Jungle Terrarium",
       "price": 1500,
       "image": "terr2.jpg",
-      "id": 9
-    },
-    {
-      "userId": 10,
-      "productId": 39,
-      "name": "Desert Cactus Terrarium",
-      "price": 1699,
-      "image": "terr3.jpg",
-      "id": 10
+      "id": 11
     }
   ],
   "orders": [
@@ -1092,6 +1030,57 @@
       "date": "2/20/2026, 1:42:53 PM",
       "status": "Paid",
       "id": 15
+    },
+    {
+      "userId": 1,
+      "customerName": "fasil",
+      "customerEmail": "fasil@gmail.com",
+      "items": [
+        {
+          "userId": 1,
+          "productId": 31,
+          "name": "Ecofynd Coir Pot",
+          "price": 199,
+          "image": "eco-pro13.jpg",
+          "quantity": 3,
+          "id": 8
+        }
+      ],
+      "total": 597,
+      "paymentMethod": "upi",
+      "date": "2/23/2026, 9:58:16 AM",
+      "status": "Paid",
+      "id": 16
+    },
+    {
+      "userId": 4,
+      "customerName": "fasi",
+      "customerEmail": "fasi@gmail.com",
+      "items": [
+        {
+          "userId": 4,
+          "productId": 31,
+          "name": "Ecofynd Coir Pot",
+          "price": 199,
+          "image": "eco-pro13.jpg",
+          "quantity": 5,
+          "id": 8
+        },
+        {
+          "userId": 4,
+          "productId": 38,
+          "name": "Mini Jungle Terrarium",
+          "price": 1500,
+          "image": "terr2.jpg",
+          "quantity": 3,
+          "id": 9
+        }
+      ],
+      "total": 5495,
+      "paymentMethod": "upi",
+      "date": "2/23/2026, 10:27:06 AM",
+      "status": "Paid",
+      "id": 17
     }
   ]
 }

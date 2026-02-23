@@ -13,7 +13,6 @@ import AdminProtectedRoute from "../components/AdminProtectedRoute";
 const AdminRoutes = () => {
   return (
     <Routes>
-      {/*  protected admin area */}
       <Route
         path="/admin"
         element={

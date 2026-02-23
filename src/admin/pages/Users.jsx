@@ -14,7 +14,6 @@ const Users = () => {
   const itemsPerPage = 8;
 
   useEffect(() => {
-    // shimmer delay
     const timer = setTimeout(() => {
       setLoading(false);
     }, 200);
@@ -22,7 +21,6 @@ const Users = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  //  search user 
   const filteredUsers = users.filter((user) =>
     user.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     user.email.toLowerCase().includes(searchTerm.toLowerCase())

@@ -45,7 +45,7 @@ function Register() {
   try {
     const res = await registerUser(newUser);
 
-    login(res.data); // this incldes id
+    login(res.data);
 
 
     showToast("Account created successfully 🌱");

@@ -54,7 +54,6 @@ const OrderDetails = () => {
   return (
     <div className="admin-page">
 
-      {/* breadcrumb */}
       <div className="breadcrumb">
         <Link to="/admin/orders">Orders</Link>
         <span> / </span>
@@ -78,10 +77,8 @@ const OrderDetails = () => {
         </div>
       </div>
 
-      {/* grid*/}
       <div className="premium-order-grid">
 
-        {/* custoner card */}
         <div className="premium-card">
           <h3>Customer Information</h3>
           <br />
@@ -109,7 +106,6 @@ const OrderDetails = () => {
           </div>
         </div>
 
-        {/* order summary */}
         <div className="premium-card summary-card">
           <h3>Order Summary</h3>
           <br />
@@ -137,7 +133,6 @@ const OrderDetails = () => {
 
       </div>
 
-      {/* products section */}
       <div className="premium-products-section">
         <h3 className="section-title">Products</h3>
 

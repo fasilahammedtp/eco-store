@@ -38,7 +38,7 @@ export function WishlistProvider({ children }) {
     if (exists) {
       await removeFromWishlist(exists.id);
 
-      // update locally (no refetch)
+
       setWishlist(prev =>
         prev.filter(i => i.id !== exists.id)
       );
@@ -46,7 +46,7 @@ export function WishlistProvider({ children }) {
     } else {
       const res = await addToWishlist(product, user.id);
 
-      // add locally (no refetch)
+
       setWishlist(prev => [...prev, res.data]);
     }
   };

@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState, useContext } from "react";
 import "./Navbar.css";
 import { useAuth } from "../context/AuthContext";
@@ -14,14 +14,22 @@ function Navbar() {
   const { wishlist } = useWishlist();
 
   const location = useLocation();
+  const navigate = useNavigate();
   const isHome = location.pathname === "/";
 
-  // Scroll effect
+
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+
+  const handleLogout = () => {
+    logout();
+    setMenuOpen(false); 
+    navigate("/"); 
+  };
 
   return (
     <nav className={`navbar ${scrolled || !isHome ? "solid" : ""}`}>
@@ -67,7 +75,8 @@ function Navbar() {
               My Orders
             </Link>
           </li>
-           <li>
+
+          <li>
             <Link to="/about" onClick={() => setMenuOpen(false)}>
               About
             </Link>
@@ -87,7 +96,7 @@ function Navbar() {
           ) : (
             <button
               className="signup"
-              onClick={logout}
+              onClick={handleLogout} 
             >
               <i className="fa-regular fa-user"></i>Logout
             </button>

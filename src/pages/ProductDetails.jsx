@@ -70,10 +70,10 @@ function ProductDetails() {
       return;
     }
 
-    // 🔥 Add to cart
+
     await addToCart({ ...product, quantity }, user.id);
 
-    // Update navbar count instantly
+
     loadCartCount();
 
     showToast("Added to cart 🛒", "success");

@@ -85,7 +85,6 @@ function ProductCard({ item, onAdd }) {
     <Link to={`/product/${item.id}`} className="product-link">
       <div className="product-card">
 
-        {/* Floating Wishlist */}
         <button
           className={`wishlist-floating ${isLiked ? "liked" : ""}`}
           onClick={handleWishlist}

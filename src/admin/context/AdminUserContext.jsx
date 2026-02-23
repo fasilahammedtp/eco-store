@@ -9,12 +9,10 @@ const BASE_URL = "http://localhost:5000/users";
 export const AdminUserProvider = ({ children }) => {
   const [users, setUsers] = useState([]);
 
-  //fetch users from db.json
   const fetchUsers = async () => {
   try {
     const res = await axios.get(BASE_URL);
 
-    //exclude admin only
     const normalUsers = res.data.filter(
       user => user.role !== "admin"
     );
@@ -31,7 +29,6 @@ export const AdminUserProvider = ({ children }) => {
     fetchUsers();
   }, []);
 
-  // block users
   const blockUser = async (id) => {
     try {
       await axios.patch(`${BASE_URL}/${id}`, {
@@ -43,7 +40,6 @@ export const AdminUserProvider = ({ children }) => {
     }
   };
 
-  // unblock user
   const unblockUser = async (id) => {
     try {
       await axios.patch(`${BASE_URL}/${id}`, {

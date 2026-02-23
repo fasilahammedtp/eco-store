@@ -59,14 +59,12 @@ const UserDetails = () => {
   return (
     <div className="admin-page">
 
-      {/* breadcrumb */}
       <div className="breadcrumb">
         <Link to="/admin/users">Users</Link>
         <span> / </span>
         <span>{user.name}</span>
       </div>
 
-      {/* user header card */}
       <div className="user-header-card">
         <div className="user-header-left">
           <div className="user-avatar">
@@ -87,7 +85,6 @@ const UserDetails = () => {
         </div>
       </div>
 
-      {/* user stats */}
       <div className="user-stats">
         <div className="stat-card">
           <p>Total Orders</p>
@@ -105,7 +102,6 @@ const UserDetails = () => {
         </div>
       </div>
 
-      {/* order history card */}
       <div className="orders-card">
         <div className="orders-header">
           <h3>Order History</h3>

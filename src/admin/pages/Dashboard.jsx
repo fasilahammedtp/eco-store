@@ -31,8 +31,6 @@ const Dashboard = () => {
     }
   };
 
-  /* stats */
-
   const totalUsers = users.length;
   const totalOrders = orders.length;
 
@@ -46,7 +44,6 @@ const Dashboard = () => {
     0
   );
 
-  /* month stats*/
   const now = new Date();
   const currentMonth = now.getMonth();
   const currentYear = now.getFullYear();
@@ -63,7 +60,6 @@ const Dashboard = () => {
     .filter(o => o.status === "Paid")
     .reduce((sum, order) => sum + Number(order.total || 0), 0);
 
-  /* time filter */
   const filteredPaidOrders = useMemo(() => {
     const days = Number(timeFilter);
     const now = new Date();
@@ -75,8 +71,6 @@ const Dashboard = () => {
       return diffDays <= days;
     });
   }, [paidOrders, timeFilter]);
-
-  /* revenue by date */
 
   const revenueData = useMemo(() => {
     const revenueByDate = {};
@@ -95,16 +89,12 @@ const Dashboard = () => {
       }));
   }, [filteredPaidOrders]);
 
-  /* pie  */
-
   const orderStatusData = [
     { name: "Paid", value: paidOrders.length, color: "#4caf50" },
     { name: "In Transit", value: inTransitOrders.length, color: "#2196f3" },
     { name: "Delivered", value: deliveredOrders.length, color: "#9c27b0" },
     { name: "Cancelled", value: cancelledOrders.length, color: "#f44336" }
   ];
-
-  /*shimmer effct */
 
   if (loading) {
     return (
@@ -129,8 +119,6 @@ const Dashboard = () => {
     );
   }
 
-  /* dashboard */
-
   return (
     <div className="admin-page premium-dashboard">
 
@@ -150,7 +138,6 @@ const Dashboard = () => {
         <KpiCard title="This Month Revenue" value={`₹${thisMonthRevenue}`} icon="fa-chart-line" />
       </div>
 
-      {/* pie */}
       <div className="analytics-section">
         <div className="analytics-left">
           <h3>Order Analytics</h3>
@@ -173,7 +160,6 @@ const Dashboard = () => {
                 data={orderStatusData}
                 innerRadius={90}
                 outerRadius={130}
-                // paddingAngle={1}
                 dataKey="value"
               >
                 {orderStatusData.map((entry, index) => (
