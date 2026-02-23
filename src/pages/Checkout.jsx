@@ -14,6 +14,12 @@ function Checkout() {
   const [loading, setLoading] = useState(false);
   const [toast, setToast] = useState({ show: false, msg: "", type: "" });
 
+  const [address, setAddress] = useState("");
+  const [city, setCity] = useState("");
+  const [stateName, setStateName] = useState("");
+  const [pincode, setPincode] = useState("");
+  const [phone, setPhone] = useState("");
+
   const [cardNumber, setCardNumber] = useState("");
   const [expiry, setExpiry] = useState("");
   const [cvv, setCvv] = useState("");
@@ -30,17 +36,13 @@ function Checkout() {
   const BASE_URL = "http://localhost:5000";
 
   const loadCart = async () => {
-  if (!user) return;
-
-  const res = await getCart();
-
-  const userCart = res.data.filter(
-    item => item.userId === user.id
-  );
-
-  setCart(userCart);
-};
-
+    if (!user) return;
+    const res = await getCart();
+    const userCart = res.data.filter(
+      item => item.userId === user.id
+    );
+    setCart(userCart);
+  };
 
   const checkoutItems = buyNowItem
     ? [{ ...buyNowItem, quantity: 1 }]
@@ -53,15 +55,14 @@ function Checkout() {
   }, [user, navigate]);
 
   useEffect(() => {
-  if (!user) return;
+    if (!user) return;
 
-  if (buyNowItem) {
-    setCart([{ ...buyNowItem, quantity: 1 }]);
-  } else {
-    loadCart();
-  }
-}, [user]);
-
+    if (buyNowItem) {
+      setCart([{ ...buyNowItem, quantity: 1 }]);
+    } else {
+      loadCart();
+    }
+  }, [user]);
 
   const total = checkoutItems.reduce(
     (sum, item) => sum + item.price * item.quantity,
@@ -73,21 +74,18 @@ function Checkout() {
     setTimeout(() => setToast({ show: false, msg: "", type: "" }), 2500);
   };
 
-  //  validate stock
   const validateStock = async () => {
     for (let item of checkoutItems) {
       const productId = item.productId || item.id;
       let product = null;
       let endpoint = "";
 
-      // try plants
       try {
         const res = await axios.get(`${BASE_URL}/plants/${productId}`);
         product = res.data;
         endpoint = "plants";
       } catch {}
 
-      // try eco
       if (!product) {
         try {
           const res = await axios.get(`${BASE_URL}/ecoProducts/${productId}`);
@@ -96,7 +94,6 @@ function Checkout() {
         } catch {}
       }
 
-      // try terrariums
       if (!product) {
         try {
           const res = await axios.get(`${BASE_URL}/terrariums/${productId}`);
@@ -109,13 +106,11 @@ function Checkout() {
 
       const availableStock = product.stock ?? 0;
 
-      // out of stock
       if (availableStock <= 0) {
         showToast(`${product.name} is out of stock ❌`, "error");
         return false;
       }
 
-      // not enough stock
       if (availableStock < item.quantity) {
         showToast(
           `Only ${availableStock} left for ${product.name} ❗`,
@@ -128,7 +123,6 @@ function Checkout() {
     return true;
   };
 
-  // reduce stock safely
   const reduceStock = async () => {
     for (let item of checkoutItems) {
       const productId = item.productId || item.id;
@@ -171,14 +165,27 @@ function Checkout() {
     }
   };
 
-
   const handlePayment = async () => {
     if (!checkoutItems.length) {
       showToast("Cart is empty ❗", "error");
       return;
     }
 
-    // card validation
+    if (!address || !city || !stateName || !pincode || !phone) {
+      showToast("Please fill shipping details ❗", "error");
+      return;
+    }
+
+    if (pincode.length !== 6) {
+      showToast("Invalid PIN code ❌", "error");
+      return;
+    }
+
+    if (phone.length < 10) {
+      showToast("Invalid phone number ❌", "error");
+      return;
+    }
+
     if (method === "card") {
       if (!cardNumber || !expiry || !cvv || !name) {
         showToast("Fill all card details ❗", "error");
@@ -196,7 +203,6 @@ function Checkout() {
       }
     }
 
-    // UPI validation
     if (method === "upi") {
       if (!upiId || !upiId.includes("@")) {
         showToast("Invalid UPI ID ❌", "error");
@@ -217,6 +223,13 @@ function Checkout() {
         userId: user.id,
         customerName: user.name,
         customerEmail: user.email,
+        shippingAddress: {
+          address,
+          city,
+          state: stateName,
+          pincode,
+          phone
+        },
         items: checkoutItems,
         total: total,
         paymentMethod: method,
@@ -251,6 +264,7 @@ function Checkout() {
 
   return (
     <div className="checkout-page">
+      <div className="checkout-container">
       <h2>Checkout</h2>
 
       {checkoutItems.map((item) => (
@@ -264,75 +278,51 @@ function Checkout() {
         Total: ₹{total}
       </div>
 
+
+      <div className="address-box">
+        <h3>Shipping Address</h3>
+
+        <input placeholder="Full Address" value={address} onChange={(e) => setAddress(e.target.value)} />
+        <input placeholder="City" value={city} onChange={(e) => setCity(e.target.value)} />
+        <input placeholder="State" value={stateName} onChange={(e) => setStateName(e.target.value)} />
+        <input placeholder="PIN Code" value={pincode} onChange={(e) => setPincode(e.target.value)} />
+        <input placeholder="Phone Number" value={phone} onChange={(e) => setPhone(e.target.value)} />
+      </div>
+
       <div className="payment-box">
         <label>
-          <input
-            type="radio"
-            checked={method === "card"}
-            onChange={() => setMethod("card")}
-          />
+          <input type="radio" checked={method === "card"} onChange={() => setMethod("card")} />
           Credit / Debit Card
         </label>
-
+         <br />
         <label>
-          <input
-            type="radio"
-            checked={method === "upi"}
-            onChange={() => setMethod("upi")}
-          />
+          <input type="radio" checked={method === "upi"} onChange={() => setMethod("upi")} />
           UPI Payment
         </label>
 
         {method === "card" && (
           <div className="card-form">
-            <input
-              placeholder="Card Number"
-              value={cardNumber}
-              onChange={(e) => setCardNumber(e.target.value)}
-            />
-
+            <input placeholder="Card Number" value={cardNumber} onChange={(e) => setCardNumber(e.target.value)} />
             <div className="row">
-              <input
-                placeholder="MM/YY"
-                value={expiry}
-                onChange={(e) => setExpiry(e.target.value)}
-              />
-
-              <input
-                placeholder="CVV"
-                value={cvv}
-                onChange={(e) => setCvv(e.target.value)}
-              />
+              <input placeholder="MM/YY" value={expiry} onChange={(e) => setExpiry(e.target.value)} />
+              <input placeholder="CVV" value={cvv} onChange={(e) => setCvv(e.target.value)} />
             </div>
-
-            <input
-              placeholder="Name on Card"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
+            <input placeholder="Name on Card" value={name} onChange={(e) => setName(e.target.value)} />
           </div>
         )}
 
         {method === "upi" && (
-          <input
-            className="upi-input"
-            placeholder="Enter UPI ID (name@bank)"
-            value={upiId}
-            onChange={(e) => setUpiId(e.target.value)}
-          />
+          <input className="upi-input" placeholder="Enter UPI ID (name@bank)" value={upiId} onChange={(e) => setUpiId(e.target.value)} />
         )}
       </div>
 
-      <Toast
-        show={toast.show}
-        message={toast.msg}
-        type={toast.type}
-      />
+      <Toast show={toast.show} message={toast.msg} type={toast.type} />
 
       <button className="pay-btn" onClick={handlePayment}>
         {loading ? "Processing..." : "Pay Securely"}
       </button>
     </div>
+   </div> 
   );
 }
 

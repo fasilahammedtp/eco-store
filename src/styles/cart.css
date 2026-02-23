@@ -46,3 +46,22 @@
   padding:8px 18px;
   border-radius:20px;
 }
+
+
+.checkout-btn{
+  padding:14px 36px;
+  background:#2ecc71;
+  border:none;
+  color:white;
+  border-radius:40px;
+  cursor:pointer;
+  font-weight:600;
+  font-size:1.05rem;
+  box-shadow:0 10px 25px rgba(46,204,113,.35);
+  transition:.3s;
+}
+
+.checkout-btn:hover{
+  background:#27ae60;
+  transform:translateY(-3px);
+}

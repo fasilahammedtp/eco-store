@@ -79,6 +79,7 @@ const OrderDetails = () => {
 
       <div className="premium-order-grid">
 
+        {/* Customer Info */}
         <div className="premium-card">
           <h3>Customer Information</h3>
           <br />
@@ -104,8 +105,43 @@ const OrderDetails = () => {
             <span>Status : </span>
             <strong>{order.status}</strong>
           </div>
+
+          {/* ✅ Shipping Address Section */}
+          {order.shippingAddress && (
+            <>
+              <br />
+              <h4>Shipping Address</h4>
+              <br />
+
+              <div className="details-row">
+                <span>Address : </span>
+                <strong>{order.shippingAddress.address}</strong>
+              </div>
+
+              <div className="details-row">
+                <span>City : </span>
+                <strong>{order.shippingAddress.city}</strong>
+              </div>
+
+              <div className="details-row">
+                <span>State : </span>
+                <strong>{order.shippingAddress.state}</strong>
+              </div>
+
+              <div className="details-row">
+                <span>PIN Code : </span>
+                <strong>{order.shippingAddress.pincode}</strong>
+              </div>
+
+              <div className="details-row">
+                <span>Phone : </span>
+                <strong>{order.shippingAddress.phone}</strong>
+              </div>
+            </>
+          )}
         </div>
 
+        {/* Order Summary */}
         <div className="premium-card summary-card">
           <h3>Order Summary</h3>
           <br />
@@ -133,6 +169,7 @@ const OrderDetails = () => {
 
       </div>
 
+      {/* Products Section */}
       <div className="premium-products-section">
         <h3 className="section-title">Products</h3>
 
@@ -143,7 +180,8 @@ const OrderDetails = () => {
               <img
                 src={`/${item.image}`}
                 alt={item.name}
-                className="order-detail-img"/>
+                className="order-detail-img"
+              />
 
               <div className="product-info">
                 <h4>{item.name}</h4>

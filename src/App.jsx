@@ -30,6 +30,7 @@ function App() {
   const isAuthPage =
     location.pathname === "/login" ||
     location.pathname === "/register";
+    const hideFooter = location.pathname === "/checkout";
 
   const isAdminPage = location.pathname.startsWith("/admin");
 
@@ -101,6 +102,7 @@ function App() {
           </div>
 
           {!isAuthPage && <Footer />}
+          
         </div>
       )}
     </>
