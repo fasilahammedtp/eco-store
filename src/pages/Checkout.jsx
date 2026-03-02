@@ -366,7 +366,8 @@ function Checkout() {
   const location = useLocation();
   const buyNowItem = location.state?.buyNowItem;
 
-  const BASE_URL = "https://ecostore-backend.onrender.com";
+  const BASE_URL = "https://eco-store-opns.onrender.com";
+
 
   const loadCart = async () => {
     if (!user) return;

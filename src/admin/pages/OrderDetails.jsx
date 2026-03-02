@@ -218,7 +218,8 @@ const OrderDetails = () => {
   const [order, setOrder] = useState(null);
   const [user, setUser] = useState(null);
 
-  const BASE_URL = "https://ecostore-backend.onrender.com";
+  const BASE_URL = "https://eco-store-opns.onrender.com";
+
 
   useEffect(() => {
     fetchOrder();

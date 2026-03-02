@@ -106,7 +106,8 @@
 
 import axios from "axios";
 
-const BASE_URL = "https://ecostore-backend.onrender.com";
+const BASE_URL = "https://eco-store-opns.onrender.com";
+
 
 
 export const getPlants = () => axios.get(`${BASE_URL}/plants`);

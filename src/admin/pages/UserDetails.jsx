@@ -183,7 +183,8 @@ const UserDetails = () => {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const BASE_URL = "https://ecostore-backend.onrender.com";
+  const BASE_URL = "https://eco-store-opns.onrender.com";
+
 
   useEffect(() => {
     fetchUserAndOrders();

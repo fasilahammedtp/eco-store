@@ -379,7 +379,8 @@ const Orders2 = () => {
   const [toDate, setToDate] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
   
-const BASE_URL = "https://ecostore-backend.onrender.com";
+  const BASE_URL = "https://eco-store-opns.onrender.com";
+
 
   const [loading, setLoading] = useState(true); 
 
