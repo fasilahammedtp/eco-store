@@ -76,7 +76,7 @@ export const AdminUserProvider = ({ children }) => {
 
   const fetchUsers = async () => {
   try {
-    const res = await axios.get(BASE_URL);
+    const res = await axios.get(`${BASE_URL}/users`);
 
     const normalUsers = res.data.filter(
       user => user.role !== "admin"
@@ -96,7 +96,7 @@ export const AdminUserProvider = ({ children }) => {
 
   const blockUser = async (id) => {
     try {
-      await axios.patch(`${BASE_URL}/${id}`, {
+      await axios.patch(`${BASE_URL}/users/${id}`, {
         isBlocked: true,
       });
       fetchUsers(); 
@@ -107,7 +107,7 @@ export const AdminUserProvider = ({ children }) => {
 
   const unblockUser = async (id) => {
     try {
-      await axios.patch(`${BASE_URL}/${id}`, {
+      await axios.patch(`${BASE_URL}/users/${id}`, {
         isBlocked: false,
       });
       fetchUsers();
