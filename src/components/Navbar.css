@@ -37,42 +37,7 @@
   letter-spacing: 0.5px;
 }
 
-/* mobile */
 
-@media (max-width: 768px) {
-  .logo-img {
-    height: 34px;
-  }
-
-  .logo-text {
-    font-size: 1.3rem;
-  }
-}
-
-
-
-
-
-
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;   
-  background: #1e5631;
-}
-
-
-.navbar.solid {
-  background: rgba(20, 60, 40, 0.95);
-  backdrop-filter: none;
-}
-
-.navbar.solid a {
-  color: white;
-}
 
 /* Layout */
 
@@ -220,11 +185,11 @@
 
 @media (max-width: 768px) {
   .logo-img {
-    height: 34px;
+    height: 30px;
   }
 
   .logo-text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -306,7 +271,7 @@
 
 .auth-buttons {
   display: flex;
-  gap: 12px;
+  gap: 4px;
 }
 
 .auth-buttons a {
@@ -451,3 +416,4 @@
   border-radius: 50%;
   font-weight: bold;
 }
+

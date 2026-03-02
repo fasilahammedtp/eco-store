@@ -34,7 +34,6 @@
 
 
 
-
 /* Premium dark glass overlay */
 .overlay {
   position: absolute;
@@ -100,6 +99,14 @@
   background: transparent;
   border: 2px solid white;
 }
+
+@media (max-width: 768px){
+   .hero-content h1{
+    font-size: 5rem;;
+   }
+   
+}
+
 
 /* Animations */
 @keyframes slowZoom {
