@@ -175,7 +175,7 @@ function Orders() {
 
      
       try {
-        const res = await axios.get(`${BASE_URL}plants/${productId}`);
+        const res = await axios.get(`${BASE_URL}/plants/${productId}`);
         if (res.data) {
           await axios.patch(`${BASE_URL}/plants/${productId}`, {
             stock: (res.data.stock || 0) + item.quantity
