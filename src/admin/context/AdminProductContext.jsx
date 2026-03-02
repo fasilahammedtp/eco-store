@@ -100,7 +100,8 @@ import { createContext, useContext, useEffect, useState } from "react";
 import axios from "axios";
 
 const AdminProductContext = createContext();
-const BASE_URL = "https://ecostore-backend.onrender.com";
+const BASE_URL = "https://eco-store-opns.onrender.com";
+
 
 export const AdminProductProvider = ({ children }) => {
   const [products, setProducts] = useState([]);

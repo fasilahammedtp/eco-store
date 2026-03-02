@@ -68,7 +68,8 @@ import axios from "axios";
 
 const AdminUserContext = createContext();
 
-const BASE_URL = "https://ecostore-backend.onrender.com";
+const BASE_URL = "https://eco-store-opns.onrender.com";
+
 
 export const AdminUserProvider = ({ children }) => {
   const [users, setUsers] = useState([]);
