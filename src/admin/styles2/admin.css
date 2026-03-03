@@ -1,3 +1,4 @@
+
 :root {
   --primary: #2f855a;
   --secondary: #22543d;
@@ -6,6 +7,10 @@
   --text-muted: #4a5568;
 }
 
+
+*{
+  -webkit-tap-highlight-color: transparent;
+}
 html, body {
   overflow-x: hidden;
 }
@@ -246,7 +251,6 @@ body {
   flex: 1;
   padding: 20px 30px;
   overflow-y: auto;
-  width: 100%;
 }
 
 .admin-page {
@@ -254,7 +258,7 @@ body {
   padding:25px 30px;
   border-radius: 20px;
   height: 100%;
-  width: 110%;
+  width: 100%;
 }
 
 /* ===== MOBILE RESPONSIVE ===== */
@@ -1387,11 +1391,6 @@ body {
   position: relative;
 }
 
-.analytics-left {
-  flex: 1;
-  min-width: 0;
-}
-
 .analytics-left h3 {
   margin-bottom: 90px;
 }
@@ -1411,9 +1410,8 @@ body {
 
 .analytics-right {
   position: relative;
-  flex: 1;
-  min-width: 0;
 }
+
 .donut-center {
   position: absolute;
   top: 50%;
@@ -1569,8 +1567,27 @@ body {
   color: white;
   box-shadow: 0 6px 18px rgba(16, 185, 129, 0.3);
 }
+@media (max-width: 768px) {
 
+  .chart-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
 
+  .time-filter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .time-filter button {
+    flex: 1;
+    min-width: 80px;
+  }
+
+}
 .no-data {
   height: 300px;
   display: flex;

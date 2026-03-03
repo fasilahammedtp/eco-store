@@ -4,6 +4,11 @@ body {
   font-family: 'Poppins', sans-serif;
 
 }
+
+*{
+  -webkit-tap-highlight-color: transparent;
+}
+
 .page-content {
   margin-top: 60px;
 }
