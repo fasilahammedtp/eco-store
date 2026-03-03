@@ -23,7 +23,7 @@ const AdminNavbar = ({ setSidebarOpen }) => {
         </div>
 
       <div className="admin-navbar-right">
-        <span>Admin</span>
+        <span className="admin-badge">Admin</span>
         <button onClick={handleLogout}><i className="fa-solid fa-user"></i> Logout</button>
       </div>
     </header>
