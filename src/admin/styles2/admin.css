@@ -1723,7 +1723,7 @@ body {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 5px;
 }
 
 .admin-search {
@@ -1731,7 +1731,7 @@ body {
   border-radius: 8px;
   border: 1px solid #ddd;
   outline: none;
-  min-width: 220px;
+  min-width: 0px;
   transition: 0.2s ease;
 }
 

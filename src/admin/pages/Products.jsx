@@ -61,7 +61,7 @@ const Products = () => {
           <Link to="/admin/products/add" className="add-btn premium-add">
             <i className="fa-solid fa-circle-plus"></i> Add Product
           </Link>
-
+          
           <input
             type="text"
             placeholder="Search product..."
