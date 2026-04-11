@@ -172,7 +172,7 @@ function Home() {
 
         <div className="slider">
 
-        {Array(6).fill().map((_, i) => (
+        {Array(7).fill().map((_, i) => (
           <div key={i} className="skeleton-card"></div>
         ))}
 
