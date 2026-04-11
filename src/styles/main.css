@@ -26,7 +26,7 @@ body {
 }
 
 .page-content {
-  flex: 1;
+  flex: 2;
 }
 
 
@@ -80,7 +80,7 @@ body {
   }
 
   .product-card {
-    padding: 12px;
+    padding: 15px;
   }
 
   .product-card img {
