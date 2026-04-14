@@ -29,6 +29,11 @@ body {
   flex: 2;
 }
 
+  .page-header {
+    margin-top: 10 !important;
+    padding-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
 
 
 /* ================= MOBILE RESPONSIVE FIXES ================= */
@@ -159,3 +164,14 @@ body {
 
 
 
+@media (max-width: 900px) {
+  .page-header {
+    margin-top: 0 !important;
+    padding-top: 0px !important;
+    margin-bottom: 6px !important;
+  }
+
+  .featured {
+    padding: 20px 16px 60px !important;
+  }
+}

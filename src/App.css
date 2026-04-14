@@ -333,6 +333,8 @@
   text-align: center;
 }
 
+
+
 .product-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 28px rgba(0,0,0,0.15);
@@ -368,6 +370,8 @@
 .product-card button:hover {
   background: #27ae60;
 }
+
+
 /* ===== CATEGORY PAGES GRID (no scroll) ===== */
 
 .product-grid {

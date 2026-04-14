@@ -46,8 +46,10 @@ function Checkout() {
   };
 
   const checkoutItems = buyNowItem
-    ? [{ ...buyNowItem, quantity: 1 }]
+    ? [{ ...buyNowItem, quantity: buyNowItem.quantity || 1 }]
     : cart;
+
+    
 
   useEffect(() => {
     if (!user) {
@@ -57,9 +59,8 @@ function Checkout() {
 
   useEffect(() => {
     if (!user) return;
-
     if (buyNowItem) {
-      setCart([{ ...buyNowItem, quantity: 1 }]);
+      setCart([{ ...buyNowItem, quantity: buyNowItem.quantity || 1 }]);  // ← fixed
     } else {
       loadCart();
     }

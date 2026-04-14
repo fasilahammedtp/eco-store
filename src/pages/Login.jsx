@@ -74,7 +74,7 @@ function Login() {
   return (
     <div className="auth-page">
       <div className="auth-card">
-        <h2>Welcome Back 🌿</h2>
+        <h2>Welcome Back <i className="fa-solid fa-leaf"></i></h2>
 
         <input
           placeholder="Email address"

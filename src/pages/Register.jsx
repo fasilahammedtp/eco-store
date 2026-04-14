@@ -63,7 +63,7 @@ function Register() {
   return (
     <div className="auth-page">
       <div className="auth-card">
-        <h2>Create Account 🌱</h2>
+        <h2>Create Account <i className="fa-solid fa-leaf"></i></h2>
 
         <input placeholder="Full name" value={name} onChange={e => setName(e.target.value)}/>
 

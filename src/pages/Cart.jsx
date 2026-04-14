@@ -6,7 +6,7 @@ import { useAuth } from "../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
 import "../styles/cart.css";
 
-function Cart() {z
+function Cart() {
   const [cart, setCart] = useState([]);
   const { loadCartCount } = useContext(CartContext);
   const navigate = useNavigate();

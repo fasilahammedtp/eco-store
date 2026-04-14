@@ -44,3 +44,21 @@
 .contact-form button:hover {
   transform: translateY(-2px);
 }
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .checkout-page {
+    padding: 10px 12px 40px !important;
+    margin-top: 0 !important;
+    min-height: auto !important;
+  }
+
+  .checkout-container {
+    padding: 20px 16px !important;
+    margin-top: 0 !important;
+  }
+}

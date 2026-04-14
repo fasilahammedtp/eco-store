@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ProductDetails from "./pages/ProductDetails";
 import Orders from "./pages/Orders";
+import Profile from "./pages/Profile";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -90,6 +91,14 @@ function App() {
                     <Orders />
                   </ProtectedRoute>
                 }
+              />
+              <Route
+                path="/profile" 
+                element={
+                  <ProtectedRoute>
+                    <Profile />
+                  </ProtectedRoute>
+                } 
               />
 
               <Route path="/about" element={<About />} />

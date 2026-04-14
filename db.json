@@ -110,7 +110,7 @@
       "name": "Monstera Deliciosa Plant",
       "price": 999,
       "image": "plant1.jpg",
-      "description": "The Monstera Delicios Often called the Swiss cheese plant, is a popular tropical houseplant known for its large ,glossy leaves with distinctive natural splits and holes, called fenestrations. ",
+      "description":  "The Monstera Deliciosa, often called the Swiss cheese plant, is a striking tropical houseplant admired for its large glossy leaves with natural splits and holes known as fenestrations. Native to Central America, it thrives in bright indirect light and adds a bold, exotic touch to interiors. Its lush foliage not only enhances décor but also helps purify indoor air, making it a perfect blend of beauty and function.",
       "stock": 19,
       "category": "Plants"
     },
@@ -119,7 +119,7 @@
       "name": "Snake Plant",
       "price": 399,
       "image": "plant2.jpg",
-      "description": "Known as an air purifying plant that can help improve indoor air quality",
+     "description": "The Snake Plant, also known as Sansevieria or Mother-in-law’s Tongue, is one of the most resilient indoor plants. Its upright sword-like leaves store water, allowing it to survive neglect and low light. Renowned for its air-purifying qualities, it filters toxins and improves oxygen levels, making it ideal for bedrooms and offices. Minimal care and striking architectural form make it a must-have for modern homes.",
       "stock": 18
     },
     {
@@ -127,7 +127,7 @@
       "name": "Peace Lilly",
       "price": 499,
       "image": "plant3.jpg",
-      "description": "Known as an air purifying plant that can help improve indoor air quality",
+      "description": "The Peace Lily is a graceful indoor plant with glossy green leaves and elegant white blooms that resemble calla lilies. Beyond its beauty, it is celebrated for its ability to remove harmful pollutants from the air. It thrives in low to medium light and requires minimal maintenance, making it a favorite for homes and workplaces. Its calming presence and symbolic association with peace make it a thoughtful gift as well.",
       "stock": 7,
       "category": "Plants"
     },
@@ -136,7 +136,7 @@
       "name": "Artificial Fiddle Fig Plant",
       "price": 799,
       "image": "plant4.jpg",
-      "description": "Features lifelike leaves with realistic tectures and a pot base. requires no water ,pruning,or sunlight",
+       "description": "This Artificial Fiddle Fig Plant offers the lush look of real greenery without the upkeep. Featuring lifelike leaves with realistic textures and a sturdy pot base, it brings natural beauty indoors without requiring water, pruning, or sunlight. Perfect for busy households or offices, it adds a touch of sophistication and freshness to any space year-round.",
       "stock": 19
     },
     {
@@ -144,7 +144,7 @@
       "name": "Spider Plant",
       "price": 699,
       "image": "plant5.jpg",
-      "description": "Fast growing plant that removes pollutants and looks great in hanging pots.",
+      "description": "The Spider Plant is a fast-growing, low-maintenance houseplant known for its arching green leaves with white stripes. It is highly effective at removing indoor pollutants and looks stunning in hanging baskets or decorative pots. Easy to propagate through its baby plantlets, it is a favorite among beginners and seasoned plant lovers alike.",
       "stock": 20
     },
     {
@@ -152,7 +152,7 @@
       "name": "Aloe Vera",
       "price": 259,
       "image": "plant6.jpg",
-      "description": "Medicinal succulent known for healing skin and improving air quality.",
+      "description": "Aloe Vera is a medicinal succulent prized for its healing gel that soothes burns, skin irritations, and promotes wellness. With fleshy green leaves that store water, it thrives in sunny spots and requires minimal care. Beyond its health benefits, Aloe Vera also improves indoor air quality, making it both practical and decorative.",
       "stock": 20
     },
     {
