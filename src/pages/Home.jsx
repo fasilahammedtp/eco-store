@@ -16,7 +16,7 @@ function Home() {
 
   const slides = [
     {
-      image: "https://images.unsplash.com/photo-1545241047-6083a3684587?w=1600&q=90",
+      image: "https://copilot.microsoft.com/th/id/BCO.53c21d2a-f713-4db8-996b-65b1cd1723b1.png",
       tag: "Indoor Plants",
       title: "Bring Nature",
       highlight: "Into Your Home",
@@ -25,16 +25,16 @@ function Home() {
       btn2: { label: "View All", link: "/plants" },
     },
     {
-      image: "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=1600&q=90",
+      image: "https://copilot.microsoft.com/th/id/BCO.9c23088a-b431-4233-a35e-945ec03a54ba.png",
       tag: "Eco Products",
       title: "Live Green,",
       highlight: "Live Better",
-      sub: "Sustainable everyday essentials for a zero-waste lifestyle",
+      sub: "Sustainable everyday essentials for a zero-waste lifestyle", 
       btn1: { label: "Eco Products", link: "/eco-products" },
       btn2: { label: "Explore", link: "/eco-products" },
     },
     {
-      image: "https://images.unsplash.com/photo-1512428813834-c702c7702b78?w=1600&q=90",
+      image: "https://copilot.microsoft.com/th/id/BCO.b7f17645-82e9-4733-9198-15017e7fb0f4.png",
       tag: "Terrariums",
       title: "Tiny Worlds,",
       highlight: "Endless Wonder",
